@@ -34,8 +34,8 @@ With `setf/2` you could set value deep-nested inside a map or a struct in a natu
 
 Add `utils` to your list of dependencies in `mix.exs`:
 
-    ```elixir
-    def deps do
-      [{:utils, "~> 0.1.0"}]
-    end
-    ```
+```elixir
+  def deps do
+    [{:utils, "~> 0.1.0"}]
+  end
+```
