@@ -7,6 +7,9 @@ defmodule Utils.Mixfile do
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     source_url: "https://github.com/romul/utils",
+     description: "Handy utility functions for Elixir",
+     package: package(),
      deps: deps()]
   end
 
@@ -28,5 +31,11 @@ defmodule Utils.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     []
+  end
+
+  defp package do
+    [maintainers: ["Roman Smirnov"],
+     licenses: ["MIT"],
+     links: %{"Github" => "https://github.com/romul/utils"}]
   end
 end
